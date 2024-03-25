@@ -31,3 +31,9 @@ public class Gamebai {
                 betFields[i] = new JTextField();
                 add(betFields[i]);
             }
+            betButton = new JButton("Cược");
+            betButton.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    rollDice();
+                }
