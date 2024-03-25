@@ -25,3 +25,6 @@ public class Gamebai {
 
             label = new JLabel("Mời bạn đặt cược");
             add(label);
+            betFields = new JTextField[6];
+            for (int i = 0; i < 6; i++) {
+                add(new JLabel(cards[i]));
