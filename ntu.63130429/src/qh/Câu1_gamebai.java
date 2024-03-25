@@ -53,3 +53,20 @@ public class Gamebai {
                 String result = cards[random.nextInt(cards.length)];
                 results.put(result, results.get(result) + 1);
             }
+            StringBuilder resultStr = new StringBuilder();
+            for (String card : cards) {
+                resultStr.append(card).append(": ").append(results.get(card)).append("\n");
+            }
+            JOptionPane.showMessageDialog(this, resultStr.toString(), "Kết quả", JOptionPane.INFORMATION_MESSAGE);
+        }
+
+        public static void main(String[] args) {
+            SwingUtilities.invokeLater(new Runnable() {
+                @Override
+                public void run() {
+                    new CardGame();
+                }
+            });
+        }
+    }
+}
