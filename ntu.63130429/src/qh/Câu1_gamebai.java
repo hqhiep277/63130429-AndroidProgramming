@@ -21,3 +21,7 @@ public class Gamebai {
             setTitle("Roll Dice Game");
             setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             setSize(400, 300);
+            setLayout(new GridLayout(7, 2));
+
+            label = new JLabel("Mời bạn đặt cược");
+            add(label);
