@@ -6,4 +6,9 @@ import java.awt.event.ActionListener;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
+public class Gamebai {
 
+    public static class CardGame extends JFrame {
+        private JLabel label;
+        private JTextField[] betFields;
+        private JButton betButton;
