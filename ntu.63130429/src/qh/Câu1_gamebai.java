@@ -17,3 +17,7 @@ public class Gamebai {
         public CardGame() {
             initializeUI();
         }
+        private void initializeUI() {
+            setTitle("Roll Dice Game");
+            setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            setSize(400, 300);
