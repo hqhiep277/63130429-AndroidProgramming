@@ -37,3 +37,19 @@ public class Gamebai {
                 public void actionPerformed(ActionEvent e) {
                     rollDice();
                 }
+            });
+            add(betButton);
+
+            setVisible(true);
+        }
+
+        private void rollDice() {
+            Map<String, Integer> results = new HashMap<>();
+            for (String card : cards) {
+                results.put(card, 0);
+            }
+            Random random = new Random();
+            for (int i = 0; i < 3; i++) {
+                String result = cards[random.nextInt(cards.length)];
+                results.put(result, results.get(result) + 1);
+            }
