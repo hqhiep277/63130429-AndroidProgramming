@@ -28,3 +28,6 @@ public class Gamebai {
             betFields = new JTextField[6];
             for (int i = 0; i < 6; i++) {
                 add(new JLabel(cards[i]));
+                betFields[i] = new JTextField();
+                add(betFields[i]);
+            }
