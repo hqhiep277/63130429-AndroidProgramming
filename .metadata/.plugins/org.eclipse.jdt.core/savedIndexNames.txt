@@ -1,0 +1,2 @@
+INDEX VERSION 1.134+E:\LTThietBiDiDong\New folder\63130429-AndroidProgramming\.metadata\.plugins\org.eclipse.jdt.core
+642199176.index
