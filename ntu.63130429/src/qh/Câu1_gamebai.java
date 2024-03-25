@@ -12,3 +12,8 @@ public class Gamebai {
         private JLabel label;
         private JTextField[] betFields;
         private JButton betButton;
+        private final String[] cards = { "9", "10", "J", "Q", "K", "A"};
+
+        public CardGame() {
+            initializeUI();
+        }
